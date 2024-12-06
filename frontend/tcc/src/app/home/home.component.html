@@ -1,0 +1,44 @@
+<div class="home-container">
+  <!-- Alerta de Sucesso -->
+  <div *ngIf="showSuccessAlert" class="alert success" [ngClass]="{'fade-out': alertFadeOut}">
+    <span class="alert-message">Login realizado com sucesso!</span>
+    <button class="close-btn" (click)="closeAlert()">×</button>
+  </div>
+
+  <header [@fadeInUp]>
+    <h1>(EaD) do Brasil - UNINTER</h1>
+    <nav>
+      <a (click)="signIn()">Sair</a>
+      <a href="https://www.uninter.com/mestrado/" target="_blank">Cursos</a>
+      <a href="https://api.whatsapp.com/send/?phone=554121042500&text&type=phone_number&app_absent=0"
+        target="_blank">Contato</a>
+      <a href="#">Sair</a>
+      <a href="https://www.uninter.com/" target="_blank" class="cta">Começar</a>
+    </nav>
+  </header>
+
+  <section class="content" [@fadeInUp]>
+    <h2>Bem-vindo(a)!</h2>
+    <p>
+      A Uninter (Centro Universitário Internacional) é uma das maiores instituições de ensino superior do Brasil,
+      com destaque em educação a distância (EAD). Fundada em 1999, a Uninter oferece mais de 400 cursos nas modalidades
+      de graduação, pós-graduação, mestrado, doutorado, extensão e, mais recentemente, cursos técnicos e
+      profissionalizantes.
+      Presente em todos os estados brasileiros, conta com uma ampla rede de polos, totalizando mais de 700 unidades no
+      país e no exterior, incluindo polos nos Estados Unidos, Europa e Japão. Reconhecida pela qualidade no ensino, a
+      Uninter recebeu nota máxima no recredenciamento do Ministério da Educação
+      (MEC) para a modalidade
+      EAD e venceu prêmios como o Top Educação por 14 anos consecutivos. Além disso, foi pioneira na introdução de
+      metodologias inovadoras,
+      como a graduação telepresencial ao vivo, que permite interação em tempo real sem a necessidade de presença física
+      nos polos.
+      A instituição também se destaca por seu impacto social e alcance global, com mais de 620 mil alunos formados e
+      iniciativas que incluem
+      projetos de pesquisa e ações de extensão voltadas à comunidade. Recentemente, ampliou sua oferta de cursos
+      técnicos e profissionalizantes
+      para todo o Brasil, antes restritos a Curitiba, consolidando-se como uma referência em educação acessível e
+      inovadora.
+    </p>
+    <button (click)="findOutMore()">Saiba Mais</button>
+  </section>
+</div>
