@@ -75,7 +75,7 @@ Antes de começar, certifique-se de que os seguintes pré-requisitos estão aten
 
     1. Adicione JAVA_HOME como variável de ambiente:
        ```
-       %C:\Program Files\Java\jdk-23%
+       C:\Program Files\Java\jdk-23
        ```
 # Guia de Instalação Frontend
 
